@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../Home/menustyle.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Formulario</title>
+    <style>
+        fieldset {
+            border-width: 6px;
+            border-color: #DC143C;
+        }
+        
+        #sub {
+            margin-left: 5px;
+            margin-bottom: 5px;
+        }
+        
+        body {
+            background-color: #F1EEEE;
+        }
+        
+        content {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        header {
+            background-color: #88F0AB;
+            color: blanchedalmond;
+            margin: 0 auto;
+            padding: 0;
+            text-align: center;
+        }
+        
+        form fieldset p {
+            padding: 5px;
+            margin: 5px;
+        }
+        
+        #cadastro {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="../Home/Imagem003.png" alt="Hiperdia" height="150">
+    </header>
+    <hr>
+    <ul>
+        <nav id="menu-h">
+            <ul>
+                <li>
+                    <a href="../Home/home2.html" target="_self">Home
+                    </a>
+                </li>
+                <li>
+                    <a href="../Listas/lista.html">Notas
+                    </a>
+                </li>
+                <li>
+                    <a href="../Formulario/form.html">Cadastro
+            </a>
+                </li>
+            </ul>
+        </nav>
+        <hr>
+        <content>
+            <h1 id="cadastro">CADASTRO</h1>
+            <form>
+                <fieldset>
+                    <legend style="font-size: larger;">
+                    <strong>Dados do Usuário</strong></legend>
+                    <p>
+                        <label>Nome Completo: </label>
+                        <input type="text" />
+                    </p>
+                    <p>
+                        <label>Endereço: </label>
+                        <input type="text" />
+                        <label>N°: </label>
+                        <input type="number">
+                        <label>Complemento: </label>
+                        <input type="text" />
+                    </p>
+                    <p> <label>Estado onde reside: </label><select>
+                        <option value=""></option>
+                        <option value="">AC</option>
+                        <option value="">AL</option>
+                        <option value="">AP</option>
+                        <option value="">AM</option>
+                        <option value="">BA</option>
+                        <option value="">CE</option>
+                        <option value="">DF</option>
+                        <option value="">ES</option>
+                        <option value="">GO</option>
+                        <option value="">MA</option>
+                        <option value="">MT</option>
+                        <option value="">MS</option>
+                        <option value="">MG</option>
+                        <option value="">PA</option>
+                        <option value="">PB</option>
+                        <option value="">PR</option>
+                        <option value="">PE</option>
+                        <option value="">PI</option>
+                        <option value="">RJ</option>
+                        <option value="">RN</option>
+                        <option value="">RS</option>
+                        <option value="">RO</option>
+                        <option value="">RR</option>
+                        <option value="">SC</option>
+                        <option value="">SP</option>
+                        <option value="">SE</option>
+                        <option value="">TO</option>
+                      </select>
+                    </p>
+                    <p>
+                        <label>E-mail:</label>
+                        <input type="email" id="email" name="email" />
+                    </p>
+                    <p>
+                        <label>Data de nascimento:</label> <input type="date"></p>
+                    <p>
+                        <label>Telefone:</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" />
+                    </p>
+                    <p>
+                        <label>Informe uma URL(enderço na web) para contato nas redes sociais:</label> <input type="url"></p>
+                    </p>
+
+                    <p>
+                        <label>Complemente os dados abaixo para realização de marcação de exames e consultas.</label> </p>
+                    </p>
+                    <p>
+                        <label>Informe o melhor mês para atualização dos dados cadastrais.</label>
+                        <input type="month">
+                    </p>
+                    <p>
+                        <label>Informe o melhor horário para atendimento em marcações de exames e consultas</label>
+                        <input type="time">
+                    </p>
+                    <p>
+                        <label>Digite uma senha:</label>
+                        <input type="password" />
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend style="font-size: larger;">
+                    <strong>Cormobidades</strong>
+                    </legend>
+                    <p>
+                        <ul>
+                            <label>Selecione sua doença:</label>
+                            <li><input type="checkbox" />Hipertensão</li>
+                            <li><input type="checkbox">Diabetes</li>
+                            <li><input type="checkbox">Ambos</li>
+                        </ul>
+
+                    </p>
+                    </p>
+                    <ul>
+                        <label>Qual seu tipo de diabetes?</label>
+                        <li><input type="radio" id="t1" name="size" value="t1" />
+                            <label for="t1">Tipo 1</label></li>
+                        <li><input type="radio" id="t2" name="size" value="t2" />
+                            <label for="t2">Tipo 2</label></li>
+                        <li><input type="radio" id="tg" name="size" value="tg" />
+                            <label for="tg">Diabete Gestacional</label></li>
+                    </ul>
+                    </p>
+                    <p>
+                        <ul>
+                            <label>Qual seu tipo de hipertensão?</label>
+                            <li><input type="radio" value="e1" name="gender" id="e1" checked="ok" />
+                                <label for="e1">Estágio 1 (Leve)</label></li>
+                            <li><input type="radio" value="e2" name="gender" id="e2" />
+                                <label for="e2">Estágio 2(Moderado)</label></li>
+                            <li><input type="radio" value="e3" name="gender" id="e3" />
+                                <label for="e3">Estágio 3(Grave)</label></li>
+                            <li>
+                                <input type="radio" value="e4" name="gender" id="e4" />
+                                <label for="e4">Hipertensão Sistólica Isolada</label></li>
+                        </ul>
+
+                    </p>
+                    <p>
+                        <label>Quais sintomas você costuma apresentar?</label>
+                        <ul>
+                            <li><input type="checkbox" id="s1" />
+                                <label for="s1">Poliúria</label></li>
+                            <li><input type="checkbox" id="s2" />
+                                <label for="s2">Polidpsia</label></li>
+                            <li><input type="checkbox" id="s3" />
+                                <label for="s3">Cansaço ou Falta de Energia</label></li>
+                            <li>
+                                <input type="checkbox" id="s4" />
+                                <label for="s4">Dor de Cabeça</label></li>
+                            <li><input type="checkbox" id="s5" />
+                                <label for="s5">Dores no peito</label></li>
+                        </ul>
+
+                    </p>
+                </fieldset>
+                <div id="sub">
+                    <input type="submit" />
+                </div>
+            </form>
+        </content>
+</body>
+
+</html>

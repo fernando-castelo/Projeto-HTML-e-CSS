@@ -1,0 +1,38 @@
+*{
+    padding:0px;
+    margin:0 auto;
+}
+
+#menu-h{
+   margin: 0 auto;
+   padding: 0;
+   font-family:'Fredoka One', cursive;
+   background-color:  #CECACA;
+}
+
+#menu-h ul{    
+    list-style: none;
+    padding: 0;
+    box-sizing:border-box;
+    text-align: center;
+}
+
+#menu-h ul li{
+    display:inline;
+
+}
+
+#menu-h ul li a{
+    color:#353535;
+    margin: 0 auto;
+    padding:20px;
+    display: inline-block;
+    text-decoration: none;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+
+#menu-h ul li a:hover{
+    background-color: #4169E1;
+}
